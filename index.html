@@ -1,10 +1,112 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Hello World!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod2-Solution</title>
 </head>
+<style> 
 
+    * {
+        box-sizing: border-box;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    }
+
+    .p {
+        width: 90%;
+        height: 75px;
+        margin: auto;
+        font-size: 10px;
+        border: 1px solid black;
+    }
+    .row {
+        width: 100%;
+    }
+
+    .title {
+        text-align: center;
+        float: right;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+        font-size: 12.5px;
+        line-height: 20px;
+        height: 20px;
+        width: 100px;
+    }
+
+    .chicken {
+        background-color: lightpink;
+    }
+
+    .beef {
+        background-color: saddlebrown;
+    }
+
+    .salmon {
+        background-color:salmon;
+    }
+
+    .name {
+        font-size: 17.5px; 
+        text-align: center;
+    }
+
+    @media (min-width: 992px) {
+        .col-lg-4, .col-lg-6, .col-lg-12 {
+            float: left; 
+
+        }
+
+        .col-lg-4 {width: 33.33%;}
+        .col-lg-6 {width: 50%;}
+        .col-lg-12 {width: 100%;}
+    }
+
+    @media (max-width: 991px) and (min-width: 768px) {
+        .col-md-4, .col-md-6, .col-md-12 {
+            float: left; 
+
+        }
+
+        .col-md-4 {width: 33.33%;}
+        .col-md-6 {width: 50%;}
+        .col-md-12 {width: 100%;}
+    }
+
+    @media (max-width: 767px) {
+        .col-sm-4, .col-sm-6, .col-sm-12 {
+            float: left; 
+
+        }
+
+        .col-sm-4 {width: 33.33%;}
+        .col-sm-6 {width: 50%;}
+        .col-sm-12 {width: 100%;}
+    }
+
+        
+</style>
 <body>
-    <h1>Hello World!</h1>
+<div class="name"> Our Menu </div>
+<div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12">  
+        <div class="p"> 
+            <div class="title chicken"> Chicken </div> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies eleifend purus. Praesent luctus risus sed mollis suscipit. Cras congue a velit ut aliquet. Nullam sem sem, porttitor a eleifend nec, pharetra nec mauris. Curabitur sodales quam sit amet odio auctor consequat. 
+        </div>
+</div>
+    <div class="col-lg-4 col-md-6 col-sm-12">  
+        <div class="p"> 
+            <div class="title beef"> Beef </div>  
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies eleifend purus. Praesent luctus risus sed mollis suscipit. Cras congue a velit ut aliquet. Nullam sem sem, porttitor a eleifend nec, pharetra nec mauris. Curabitur sodales quam sit amet odio auctor consequat. 
+        </div>
+</div>
+    <div class="col-lg-4 col-md-12 col-sm-12"> 
+        <div class="p">  
+            <div class="title salmon"> Fish </div> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies eleifend purus. Praesent luctus risus sed mollis suscipit. Cras congue a velit ut aliquet. Nullam sem sem, porttitor a eleifend nec, pharetra nec mauris. Curabitur sodales quam sit amet odio auctor consequat. 
+        </div>
+    </div>
+</div>
+    
 </body>
-
-</html>
