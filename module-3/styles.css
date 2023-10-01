@@ -1,0 +1,23 @@
+
+.top {
+    font-size: 25px;
+}
+
+.title   {
+    font-size: 15px;
+}
+
+.icon {
+    width: 4rem;
+    height: 2rem;
+}
+
+@media (min-width: 575px) {
+    .visibility{
+        visibility: hidden;
+    }
+}
+
+.section {
+    font-size: 10px;
+}
