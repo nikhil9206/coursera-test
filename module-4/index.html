@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Greetings</title>
+</head>
+<body>
+  <h1>Greetings</h1>
+  <button onclick="greetNames()">Greet Names</button>
+  <div id="output"></div>
+  <div> I think this is what we were supposed to do but idk</div>
+
+  <script>
+    function greetNames() {
+      // Array of names
+      var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+      var outputDiv = document.getElementById("output");
+      
+      // Clear previous content in the output div
+      outputDiv.innerHTML = "";
+
+      // Loop through the array
+      for (var i = 0; i < names.length; i++) {
+        // Get the current name
+        var currentName = names[i];
+
+        // Get the first letter of the name (convert to uppercase for comparison)
+        var firstLetter = currentName.charAt(0).toUpperCase();
+
+        // Create a new paragraph element for each greeting
+        var paragraph = document.createElement("p");
+
+        // Check if the first letter is 'J'
+        if (firstLetter === 'J') {
+          paragraph.textContent = "Goodbye " + currentName;
+        } else {
+          paragraph.textContent = "Hello " + currentName;
+        }
+
+        // Append the paragraph to the output div
+        outputDiv.appendChild(paragraph);
+      }
+    }
+  </script>
+</body>
+</html>
